@@ -1,6 +1,6 @@
 import PostList from "../components/PostList"
 
-export default function PostPage({ posts }) {
+export default function PostPage() {
   return (
     <>
 
@@ -8,7 +8,7 @@ export default function PostPage({ posts }) {
 
       <section>
         <div className="container">
-          <PostList posts={posts} />
+          <PostList />
         </div>
       </section>
 

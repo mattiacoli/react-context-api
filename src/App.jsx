@@ -1,6 +1,7 @@
 import { useState } from "react"
 import PostPage from "./pages/PostPages"
 import { useEffect } from "react"
+import PostContext from "./contexts/PostContext"
 
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
 
 
   return (
+
     <>
-      <PostPage posts={posts} />
-
-
+      <PostContext.Provider value={{ posts: posts }}>
+        <PostPage />
+      </PostContext.Provider>
     </>
   )
 }

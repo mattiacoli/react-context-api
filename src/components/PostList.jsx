@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom"
 
-export default function PostList({ posts }) {
+import { useContext } from "react"
+import PostContext from "../contexts/PostContext"
+
+export default function PostList() {
+
+  const { posts } = useContext(PostContext)
 
   return (
 
